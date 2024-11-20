@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;  /* Ensures the app takes full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+  --light-background: #ffffff;
+  --dark-background: #121212;
+  --light-text: #000000;
+  --dark-text: #ffffff;
+}
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+   /* Keeps navbar on top */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav li{
+  padding: 8px 12px; /* Optional: Add some padding for better appearance */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Ensures no underline by default */
+}
+
+nav li:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  text-decoration-color: var(--red); /* Sets underline color to red */
+  text-underline-offset: 5px; /* Adds a 2px gap between the text and underline */
+  text-underline-position: below;
+  text-decoration-thickness: 5px; /* Makes the underline bold */
+  cursor: pointer; /* Show a pointer cursor */
+}
+
+.darkbtn {
+  font-size: 14px;
+}
+
+.darkbtn:hover {
+  background-color: #a31420;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.hero {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  height: 110vh; /* Ensures the hero section takes the full viewport height */
+  text-align: center; /* Centers text inside the hero */
+  /* height: calc(100vh - 1px); */
+}
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.hero h1 {
+  margin-top: 0px;
+  margin-left: 50px;
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 105px;
+}
+.hero p {
+  margin-left: 180px;
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 400px;
+  align-items:'center';
+  justify-content:'center';
+}
+
+.hero-image {
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+  margin-left: 0px;
+  margin-right: 80px;
+  bottom: 10px;
+  width: 100%;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+  justify-content: center; /* Centers the buttons */
+}
+.hero-btn button {
+  font-size: 24px;
+}
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.brand-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center; 
+}
+
+
+
+
